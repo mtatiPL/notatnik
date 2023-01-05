@@ -1,0 +1,53 @@
+﻿<Window x:Class="notatnik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:notatnik"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="plik">
+                <MenuItem Header="nowy plik" Click="NowyClick">
+                    
+                </MenuItem>
+                <MenuItem Header="otwórz plik" Click="OtworzClick">
+                    
+                </MenuItem>
+                <MenuItem Header="zapisz" Click="Zapisz2Click">
+                    
+                </MenuItem>
+                <MenuItem Header="zapisz jako" Click="ZapiszClick">
+                    
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Eydcja">
+                <MenuItem Header="kopiuj" Click="CopyClick" />
+                <MenuItem Header="wytnij" Click="CutClick" />
+                <MenuItem Header="wklej" Click="PasteClick" />
+            </MenuItem>
+            <MenuItem Header="Formatowanie">
+                <MenuItem Header="rozmiar czcionki">
+                    <MenuItem Header="++" Click="PlusClick" />
+                    <MenuItem Header="--" Click="MinusClick" />
+                </MenuItem>
+                <MenuItem x:Name="dn" Header="dzien/noc" IsCheckable="True" IsChecked="True" Click="DayAndNigthClick">
+                    
+                </MenuItem>
+                <MenuItem Header="Czerwona czcionka" Click="RedClick">
+                    
+                </MenuItem>
+            </MenuItem>
+                <MenuItem Header="O Programie">
+                    <MenuItem Header="Autor modalnie" Click="AutorModalneClick"/>
+                    <MenuItem Header="Autor niemodalne" Click="AutorNieModalneClick"/>
+                    <Separator/>
+                    <MenuItem Header="Info" Click="InfoClick"/>
+                </MenuItem>
+        </Menu>
+        <TextBox x:Name="TextBox" TextWrapping="WrapWithOverflow" AcceptsReturn="True">
+            
+        </TextBox>
+    </DockPanel>
+</Window>
